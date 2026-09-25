@@ -24,6 +24,7 @@ services:
     environment:
       ENGRAM_DATABASE_URL: postgres://engram:${POSTGRES_PASSWORD}@postgres:5432/engram_cloud?sslmode=disable
       ENGRAM_JWT_SECRET: ${ENGRAM_JWT_SECRET}
+      ENGRAM_CLOUD_TOKEN: ${ENGRAM_CLOUD_TOKEN}
       ENGRAM_CLOUD_TOKEN_PEPPER: ${ENGRAM_CLOUD_TOKEN_PEPPER}
       ENGRAM_CLOUD_HOST: 0.0.0.0
       ENGRAM_PORT: "18080"
